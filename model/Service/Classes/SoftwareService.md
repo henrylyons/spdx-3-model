@@ -12,6 +12,10 @@ SoftwareService represents a service based on software components offered for ac
 The primary provider of the SoftwareService is the /Core/suppliedBy.
 Any additional providers can use a relationship of relationship type availableFrom.
 The `serviceHostingCountry` can be used to capture any countries from which the service is provided.
+SPDX 3.1 does not define tenancy or tenant-isolation semantics for a `SoftwareService`.
+Implementations may describe these characteristics using the inherited `extension` property.
+Absence of this information means unspecified and shall not be interpreted as single-tenancy.
+Future SPDX versions may define optional Service profile classes and properties for these concepts.
 
 ## Properties
 
